@@ -6,23 +6,38 @@ body{
   
   .redes_sociales{
     background-color: rgb(4,0,6);
-    height: 50px;
+    height: calc(1.5em + 1.5vw);
     text-align: right;
   }
   .icono_twitter{
     height: 70%;
-    margin-right: 10%;
+    margin-right: 7vw;
+    
   }
   .icono_insta{
     height: 70%;
     margin-right: 2%;
   }
   .icono_face{
-    height: 100%;
+    height: 105%;
     margin-right: 2%;
   }
   
-  
+
+ @media (max-width: 575px){
+  .redes_sociales{
+    background-color: rgb(4,0,6);
+    height: 40px;
+    text-align: center;
+  }
+  .redes_sociales  .icono_twitter{
+    margin: 0;
+  }
+
+ }
+
+
+
   
   
   
@@ -41,20 +56,23 @@ body{
   
    
   .navbar {
-    margin-left: 9%;
-    margin-right: 10%;
+    margin-left: 7%;
+    margin-right: 11%;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    
     
   }
   
   .navbar-brand img{
-    width: 130px;
+    width: 9vw;
   }
   
   
   
   .navbar-light .nav-item .nav-link {
    
-    margin-right: 70px; 
+    margin-right: 2vw; 
     font-family: "Alegreya", serif;
     font-size: calc(1.5em + 1.5vw);
       font-weight: 600;
@@ -64,8 +82,54 @@ body{
      -webkit-text-stroke-width: 0.5px;
      -webkit-text-stroke-color: black;
   }
+ 
   
+  .actions button {
+    
+    font-family: "Alegreya", serif;
+    font-size: calc(.7em + .7vw);
+    font-weight: 600;
+     -webkit-text-fill-color: black;  /*sobreescribe el color de arriba por eso se comento (regardless of order) */
+     -webkit-text-stroke-width: 0.4px;
+     -webkit-text-stroke-color: black;
+     line-height: 1.4vw;
+    background-color: transparent;
+    padding: 0.3vw 0.9vw;
+    border: 0;
+    border-radius: 50px 50px 50px 50px;
+    margin-right: -70px;
+    border: 0.15vw black solid;
+    box-shadow: 1px 1px 10px rgb(192  ,50  ,42  );
+  }
   
+  @media (max-width: 575px){
+    .navbar {
+      text-align: center !important;
+      
+    }
+    .navbar-brand img{
+      width: 20vw;
+    }
+
+    .navbar-light .nav-item .nav-link {
+   
+      margin-right: -15px; 
+      font-size: calc(1em + 1vw);
+       -webkit-text-fill-color: rgb(24  ,118  ,175  );  /*sobreescribe el color de arriba por eso se comento (regardless of order) */
+       -webkit-text-stroke-width: 0.5px;
+       -webkit-text-stroke-color: black;
+    }
+    .actions button {
+      padding: 0.1vw 1vw;
+      font-size: calc(.7em + 1.2vw);
+     line-height: 3.4vw;
+    }
+
+    .actions{
+      margin-right: 50px;
+    }
+  
+   }
   
   
   
@@ -83,7 +147,7 @@ body{
   
   .stories-carousel{
     background-color: black;
-    height: 600px;
+    height: 38.3vw;
     justify-items: center;
   }
   
@@ -96,22 +160,22 @@ body{
     font-family: 'Chaparral Pro';
     font-weight: bold;
     font-style: normal;
-    font-size: 50pt;
+    font-size: 3.5vw;
       color: white;
       margin-left: 10%;
       margin-right: 10%;
-      margin-bottom: 30px;
+      margin-bottom: 1.5vw;
   }
   
   
   .conocenos{
-    margin: 0 37% 20px;
-    padding: 10px;
-    border: white solid;
+    margin: 0 37% 0.3vw;
+    padding-bottom:  0.3vw;
+    border: 0.15vw white solid;
   }
   
   .carousel-caption a {
-    font-size: 25px;
+    font-size: 1.5vw;
     color: white;
   }
   
@@ -128,16 +192,12 @@ body{
   
   .card-media img {
     width: 100%;
-    height: 600px;
+    height: 38.3vw;
     position: absolute;
     top: 0;
     left: 0;
-    min-width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
     opacity: 0.4;
     filter: alpha(opacity=80); 
-  
   }
   
   
@@ -145,15 +205,43 @@ body{
   
   .success-stories .stories-carousel .carousel-indicators {
     position: initial; /** ó: position: static; */
+    
+  }
+  
+  .carousel-indicators li{
+    width: 1.5vw !important;
+    height: 0.15vw !important;
   }
   
   
   
+  @media (max-width: 575px){
   
+    .stories-carousel{
+      height: 68.3vw;
+    }
   
-  
-  
-  
+    .card-media img {
+      height: 68.3vw;
+    }
+
+    .carousel-caption h1{
+      font-size: 7.5vw;
+    }
+    .conocenos{
+      margin: 0 20% 0.3vw;
+    }
+    
+    .carousel-caption a {
+      font-size: 3.5vw;
+    }
+
+    .carousel-indicators li{
+      width: 1.5vw !important;
+      height: 0.25vw !important;
+    }
+
+  }
   
   
   
