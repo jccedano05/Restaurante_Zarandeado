@@ -24,7 +24,7 @@ body{
   }
   
 
- @media (max-width: 575px){
+ @media (max-width: 780px){
   .redes_sociales{
     background-color: rgb(4,0,6);
     height: 40px;
@@ -102,7 +102,7 @@ body{
     box-shadow: 1px 1px 10px rgb(192  ,50  ,42  );
   }
   
-  @media (max-width: 575px){
+  @media (max-width: 780px){
     .navbar {
       text-align: center !important;
       
@@ -215,7 +215,7 @@ body{
   
   
   
-  @media (max-width: 575px){
+  @media (max-width: 780px){
   
     .stories-carousel{
       height: 68.3vw;
@@ -259,8 +259,4 @@ body{
   
   
   
-  
-  .sec_menu{
-    height: 350px;
-    width: 100%;
-  }
+ 
