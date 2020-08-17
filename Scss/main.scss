@@ -1,0 +1,102 @@
+/** colores */
+$blue-logo: #1876AF;
+$dark-green-title: #025157;
+$dark-green-text: #135359;
+$white: #ffffff;
+$gray: #4a4a4a;
+$light-gray: #979797;
+$light-green: #67b54b;
+$red-logo: #C2322A;
+
+/** fuentes */
+$font-title: "Chaparral Pro", serif;
+
+/** placeholders */
+%base-title {
+    font-family: $font-title;
+    color: $red-logo;
+    font-size: calc(1.2em + 1.3vw);
+    font-weight: bold;
+    
+}
+%base-paragraph {
+    font-family: $font-title;
+    color: $gray;
+    font-size: calc(0.7em + 1.0vw);
+}
+%base-titulos-textos {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+
+
+.menu {
+    background-color: $white;
+    max-width: unset;
+    padding: 2.5% 5%;
+    text-align: center;
+
+
+
+    .title {
+        @extend %base-title;
+      }
+
+    .description{
+        margin-top: 1.8vw;
+        margin-bottom: 2.5vw;
+        @extend %base-paragraph;
+    }
+
+    .card-img-top {
+        height: 15.5vw;
+    }
+
+    .card-title {
+        font-size: 25px;
+        color: $blue-logo;
+        font-weight: bold;
+      }
+
+      .card-text{
+        color: $gray;
+        font-size: 16px;
+      }
+
+      .acceso-menu{
+        margin: 0 40% 1.6vw;
+        padding: 1vw 0;
+        @extend %base-titulos-textos;
+        border: 0.05vw #768b8c solid;
+        font-weight: 400;
+        
+        & > a {
+            color: #768b8c;
+        }
+      }
+      
+}
+
+@media (max-width: 600px) {
+   
+    .title {
+        font-size: 26px!important;
+        margin-top: 40px !important;
+      }
+    .description{
+        font-size: 18px!important;
+        margin-bottom: 40px !important;
+    }
+
+    .card-img-top {
+        height: 52.5vw !important;
+    }
+
+    .acceso-menu{
+        margin: 20px 20% 1.6vw !important;
+        border: 0.03vw #768b8c solid !important;
+    }
+}
