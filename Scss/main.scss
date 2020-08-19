@@ -7,6 +7,8 @@ $gray: #4a4a4a;
 $light-gray: #979797;
 $light-green: #67b54b;
 $red-logo: #C2322A;
+$black-logo: #040006;
+
 
 /** fuentes */
 $font-title: "Chaparral Pro", serif;
@@ -28,6 +30,19 @@ $font-title: "Chaparral Pro", serif;
     font-size: 25px;
     font-weight: bold;
 }
+%fondoBG-mariscos{
+    
+            opacity: 0.04;
+            position: absolute;
+            margin-top: -50px;
+            left: 0;
+            height: 100%;
+}
+%color-combinado{
+  -webkit-text-fill-color: #E7B830;
+   -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
+}
 
 
 
@@ -38,8 +53,19 @@ $font-title: "Chaparral Pro", serif;
     max-width: unset;
     padding: 2.5% 5%;
     text-align: center;
+    
+    .fondo-mariscos{
+        padding: 0;
+        height: 100%;
 
+        & > img{
+            @extend %fondoBG-mariscos;
+        }
+    }
+    
+    
 
+   
 
     .title {
         @extend %base-title;
@@ -70,11 +96,11 @@ $font-title: "Chaparral Pro", serif;
         margin: 0 40% 1.6vw;
         padding: 1vw 0;
         @extend %base-titulos-textos;
-        border: 0.05vw #768b8c solid;
+        border: 0.05vw $gray solid;
         font-weight: 400;
         
         & > a {
-            color: #768b8c;
+            color: $gray;
         }
       }
       
@@ -97,6 +123,122 @@ $font-title: "Chaparral Pro", serif;
 
     .acceso-menu{
         margin: 20px 20% 1.6vw !important;
-        border: 0.03vw #768b8c solid !important;
+        border: 0.03vw  $gray solid !important;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+.acceso-contacto{
+
+  background-color: gainsboro;
+  z-index: 2;
+
+
+    .fondo-mariscos{
+        padding: 0;
+        height: 100%;
+
+        & > img{
+            @extend %fondoBG-mariscos;
+            border: 1px white solid;
+            max-height: 390px;
+
+            
+        }
+    }
+
+    
+    .col-sm-8{
+      
+      text-align: center;
+      max-width: 100%;
+      .title {
+        @extend %base-title;
+        margin-top: 30px;
+      }
+
+      .process-list {
+        margin-top: 10px;
+
+             
+      .process-description{
+      text-align: center;
+        color: $gray;
+        margin: 0;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .img-fluid{
+    max-width: 40%;
+  }
+
+  
+
+  .textwidget{
+    & > h1{
+      @extend %color-combinado;
+    }
+
+    & > p {
+      font-weight: 400 !important;
+      margin: 30px 0 20px;
+    }
+  }
+
+  .form-control{
+    width: 50% !important;
+  }
+
+  .btn-primary{
+    background-color: $red-logo !important;
+    border-color: $red-logo;
+  }
+
+}     
+
+
+
+@media (max-width: 600px) {
+   
+ 
+  .textwidget{
+    & > h1{
+      margin-top: 40px;
+    }
+
+    & > p {
+      margin-top: 10px !important;
+    }
+  }
+
+  .form-control{
+    width: 50% !important;
+  }
+
+
+}
+
+
+
+
+/*
+.autor{
+  background-color: $black-logo;
+  opacity: .9;
+  color:$white;
+  text-align: center;
+  vertical-align: middle;
+  padding: 3%;
+}
+*/
