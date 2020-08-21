@@ -1,0 +1,89 @@
+@import "variables";
+@import url("https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap");
+
+
+body {
+  text-align: center;
+}
+
+
+
+
+
+.redes_sociales {
+ /* colocar z index */
+  @extend %fondo-redes-sociales;
+
+
+  .icono_face {
+    height: 105%;
+    margin-right: 7vw;
+  }
+
+    .icono_twitter {
+      @extend %propiedadesIconos-twitter-insta;
+    }
+
+    .icono_insta {
+     @extend %propiedadesIconos-twitter-insta;
+    }
+
+}
+
+@media (max-width: 780px) {
+  .redes_sociales {
+    background-color: #040006;
+    height: 40px;
+    text-align: center;
+
+      .icono_face {
+        margin: 0;
+      }
+  }
+}
+
+
+
+
+
+
+
+
+.navbar {
+  @extend %margenes-navbar;
+
+  .navbar-brand img {
+    width: 7.5vw;
+  }
+
+  .nav-link {
+    @extend %estilos-color-linksMenu;
+  }
+
+  .actions button {
+    @extend %estilos-color-botonEnMenu;
+  }  
+
+
+  @media (max-width: 780px) {
+
+    text-align: center !important;
+    .navbar-brand img {
+      width: 20vw;
+    }
+    .nav-link {
+      margin-right: -15px;
+    }
+    .actions button {
+      padding: 0.1vw 1vw;
+      font-size: calc(.7em + 1.2vw);
+      line-height: 4.8vw;
+      font-size: calc(1em + 1vw);
+    }
+  
+    .actions {
+      margin-right: 50px;
+    }
+  }
+}
+

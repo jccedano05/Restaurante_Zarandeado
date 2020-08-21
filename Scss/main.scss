@@ -1,49 +1,104 @@
-/** colores */
-$blue-logo: #1876AF;
-$dark-green-title: #025157;
-$dark-green-text: #135359;
-$white: #ffffff;
-$gray: #4a4a4a;
-$light-gray: #979797;
-$light-green: #67b54b;
-$red-logo: #C2322A;
-$black-logo: #040006;
 
 
-/** fuentes */
-$font-title: "Chaparral Pro", serif;
+@import "variables";
 
-/** placeholders */
-%base-title {
-    font-family: $font-title;
-    color: $red-logo;
-    font-size: calc(1.2em + 1.3vw);
-    font-weight: bold;
-    
+
+.stories-carousel {
+  background-color: black;
+  height: 38.3vw;
+  justify-items: center;
 }
-%base-paragraph {
-    font-family: $font-title;
-    color: $gray;
-    font-size: calc(0.7em + 1.0vw);
+
+#carouselExampleIndicators {
+  height: 100%;
 }
-%base-titulos-textos {
-    font-size: 25px;
-    font-weight: bold;
+
+.carousel-caption h1 {
+  font-family: "Chaparral Pro";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 3.5vw;
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1.5vw;
 }
-%fondoBG-mariscos{
-    
-            opacity: 0.035;
-            position: absolute;
-            margin-top: -50px;
-            left: 0;
-            z-index: 0;
-            height: 100%;
+
+.conocenos {
+  margin: 0 37% 0.3vw;
+  padding-bottom: 0.3vw;
+  border: 0.15vw white solid;
 }
-%color-combinado{
-  -webkit-text-fill-color: #E7B830;
-   -webkit-text-stroke-width: 0.8px;
-    -webkit-text-stroke-color: black;
+
+.carousel-caption a {
+  font-size: 1.5vw;
+  color: white;
 }
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.card-media img {
+  width: 100%;
+  height: 38.3vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+  filter: alpha(opacity=80);
+}
+
+.success-stories .stories-carousel .carousel-indicators {
+  position: initial;
+  /** ó: position: static; */
+}
+
+.carousel-indicators li {
+  width: 1.5vw !important;
+  height: 0.15vw !important;
+}
+
+@media (max-width: 780px) {
+  .stories-carousel {
+    height: 68.3vw;
+  }
+
+  .card-media img {
+    height: 68.3vw;
+  }
+
+  .carousel-caption h1 {
+    font-size: 7.5vw;
+  }
+
+  .conocenos {
+    margin: 0 20% 0.3vw;
+  }
+
+  .carousel-caption a {
+    font-size: 3.5vw;
+  }
+
+  .carousel-indicators li {
+    width: 1.5vw !important;
+    height: 0.25vw !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -129,127 +184,3 @@ $font-title: "Chaparral Pro", serif;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-.acceso-contacto{
-
-  background-color: gainsboro;
-  z-index: 2;
-
-
-    .fondo-mariscos{
-        padding: 0;
-        height: 100%;
-
-        & > .card-img-top{
-            @extend %fondoBG-mariscos;
-            border: 1px white solid;  
-            max-width: 1900px !important;
-            width: 1900px !important;
-            height: 380px;
-        }
-        
-    }
-
-    
-    .col-sm-8{
-      
-      text-align: center;
-      max-width: 100%;
-      .title {
-        @extend %base-title;
-        margin-top: 30px;
-      }
-
-      .process-list {
-        margin-top: 10px;
-
-             
-      .process-description{
-      text-align: center;
-        color: $gray;
-        margin: 0;
-        font-weight: 600;
-      }
-    }
-  }
-
-  .img-fluid{
-    max-width: 40%;
-  }
-
-  
-
-  .textwidget{
-    & > h1{
-      @extend %color-combinado;
-    }
-
-    & > p {
-      font-weight: 400 !important;
-      margin: 30px 0 20px;
-    }
-  }
-
-  .form-control{
-    width: 50% !important;
-  }
-
-  .btn-primary{
-    background-color: $red-logo !important;
-    border-color: $red-logo;
-  }
-
-  .inferior{
-    background-color: transparent !important;
-    text-align: center !important;
-    margin-right: 0 !important ;
-  }
-}     
-
-
-
-
-@media (max-width: 600px) {
-   
- 
-  .textwidget{
-    & > h1{
-      margin-top: 40px;
-    }
-
-    & > p {
-      margin-top: 10px !important;
-    }
-  }
-
-  .form-control{
-    width: 50% !important;
-  }
-
-
-}
-
-
-
-
-
-
-/*
-.autor{
-  background-color: $black-logo;
-  opacity: .9;
-  color:$white;
-  text-align: center;
-  vertical-align: middle;
-  padding: 3%;
-}
-*/

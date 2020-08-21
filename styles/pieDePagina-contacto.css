@@ -1,0 +1,98 @@
+/** colores */
+/** Alturas **/
+/** fuentes */
+/** placeholders */
+.acceso-contacto .col-sm-8 .title {
+  font-family: "Chaparral Pro", serif;
+  color: #C2322A;
+  font-size: calc(1.2em + 1.3vw);
+  font-weight: bold;
+}
+
+.acceso-contacto .fondo-mariscos > .card-img-top {
+  opacity: 0.085;
+  position: absolute;
+  margin-top: -50px;
+  left: 0;
+  z-index: 0;
+  height: 100%;
+}
+
+.acceso-contacto .textwidget > h1 {
+  -webkit-text-fill-color: #E7B830;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: black;
+}
+
+.acceso-contacto {
+  background-color: gainsboro;
+  z-index: 0;
+}
+.acceso-contacto .fondo-mariscos {
+  padding: 0;
+  height: 100%;
+}
+.acceso-contacto .fondo-mariscos > .card-img-top {
+  border: 1px white solid;
+  max-width: 1600px !important;
+  width: 100% !important;
+  max-height: 600px !important;
+  height: 40% !important;
+  margin-top: 0.1vw;
+  opacity: 0.065 !important;
+}
+@media (max-width: 765px) {
+  .acceso-contacto .fondo-mariscos > .card-img-top {
+    height: 70% !important;
+  }
+}
+.acceso-contacto .col-sm-8 {
+  text-align: center;
+  max-width: 100%;
+}
+.acceso-contacto .col-sm-8 .title {
+  margin-top: 30px;
+}
+.acceso-contacto .col-sm-8 .process-list {
+  margin-top: 10px;
+}
+.acceso-contacto .col-sm-8 .process-list .process-description {
+  text-align: center;
+  color: #4a4a4a;
+  margin: 0;
+  font-weight: 600;
+}
+.acceso-contacto .img-fluid {
+  max-width: 40%;
+}
+.acceso-contacto .textwidget > p {
+  font-weight: 400 !important;
+  margin: 30px 0 20px;
+}
+.acceso-contacto .form-control {
+  width: 50% !important;
+}
+.acceso-contacto .btn-primary {
+  background-color: #C2322A !important;
+  border-color: #C2322A;
+}
+.acceso-contacto .inferior {
+  background-color: transparent !important;
+  text-align: center !important;
+  margin-right: 0 !important;
+}
+
+@media (max-width: 600px) {
+  .textwidget > h1 {
+    margin-top: 40px;
+  }
+  .textwidget > p {
+    margin-top: 10px !important;
+  }
+
+  .form-control {
+    width: 50% !important;
+  }
+}
+
+/*# sourceMappingURL=pieDePagina-contacto.css.map */
