@@ -19,11 +19,12 @@
   font-weight: bold;
 }
 
-.acceso-contacto .fondo-mariscos > img, .menu .fondo-mariscos > img {
-  opacity: 0.04;
+.acceso-contacto .fondo-mariscos > .card-img-top, .menu .fondo-mariscos > img {
+  opacity: 0.035;
   position: absolute;
   margin-top: -50px;
   left: 0;
+  z-index: 0;
   height: 100%;
 }
 
@@ -97,9 +98,11 @@
   padding: 0;
   height: 100%;
 }
-.acceso-contacto .fondo-mariscos > img {
+.acceso-contacto .fondo-mariscos > .card-img-top {
   border: 1px white solid;
-  max-height: 390px;
+  max-width: 1900px !important;
+  width: 1900px !important;
+  height: 380px;
 }
 .acceso-contacto .col-sm-8 {
   text-align: center;
@@ -130,6 +133,11 @@
 .acceso-contacto .btn-primary {
   background-color: #C2322A !important;
   border-color: #C2322A;
+}
+.acceso-contacto .inferior {
+  background-color: transparent !important;
+  text-align: center !important;
+  margin-right: 0 !important;
 }
 
 @media (max-width: 600px) {
