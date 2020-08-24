@@ -2,91 +2,41 @@
 /** Alturas **/
 /** fuentes */
 /** placeholders */
-@import url("https://fonts.googleapis.com/css?family=Alegreya:900|Open+Sans|Slabo+27px&display=swap");
-.redes_sociales {
-  background-color: #040006;
-  height: calc(1.5em + 1.5vw);
-  text-align: right;
+.nosotros {
+  background-color: black;
+  justify-items: center;
+  align-items: center;
 }
 
-.redes_sociales .icono_insta, .redes_sociales .icono_twitter {
-  height: 70%;
-  margin-right: 2%;
+.texto-nosotros {
+  margin: 5% 5% 5% 10%;
+  font-family: "Chaparral Pro";
+  color: white;
 }
 
-.navbar {
-  margin-left: 7%;
-  margin-right: 11%;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+.texto-nosotros h1 {
+  font-weight: bold;
+  font-size: 3.5vw;
+  margin-bottom: 2.5vw;
 }
 
-.navbar .nav-link {
-  margin-right: 2vw;
-  font-family: "Alegreya", serif;
-  font-size: calc(1.5em + 1.5vw);
-  font-weight: 600;
-  -webkit-text-fill-color: #1876af;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: black;
+.texto-nosotros p {
+  text-align: justify;
+  font-size: calc(1em + 0.4vw);
 }
 
-.navbar .actions button {
-  font-family: "Alegreya", serif;
-  font-size: calc(.7em + .7vw);
-  font-weight: 600;
-  -webkit-text-fill-color: black;
-  -webkit-text-stroke-width: 0.4px;
-  -webkit-text-stroke-color: black;
-  line-height: 1.4vw;
-  background-color: transparent;
-  padding: 0.3vw 0.9vw;
-  border: 0;
-  border-radius: 50px 50px 50px 50px;
-  margin-right: -70px;
-  border: 0.15vw black solid;
-  box-shadow: 1px 1px 10px #c0322a;
+.img-fluid {
+  max-width: 60% !important;
+  padding: 5% 0;
 }
 
-body {
-  text-align: center;
-}
-
-.redes_sociales .icono_face {
-  height: 105%;
-  margin-right: 7vw;
-}
 @media (max-width: 780px) {
-  .redes_sociales {
-    background-color: #040006;
-    height: 40px;
-    text-align: center;
+  .texto-nosotros h1 {
+    font-size: 7.5vw;
   }
-  .redes_sociales .icono_face {
-    margin: 0;
-  }
-}
-.navbar .navbar-brand img {
-  width: 7.5vw;
-}
-@media (max-width: 780px) {
-  .navbar {
-    text-align: center !important;
-  }
-  .navbar .navbar-brand img {
-    width: 20vw;
-  }
-  .navbar .nav-link {
-    margin-right: -15px;
-  }
-  .navbar .actions button {
-    padding: 0.1vw 1vw;
-    font-size: calc(.7em + 1.2vw);
-    line-height: 4.8vw;
-    font-size: calc(1em + 1vw);
-  }
-  .navbar .actions {
-    margin-right: 50px;
+
+  .texto-nosotros {
+    margin: 10%;
   }
 }
 

@@ -1,0 +1,52 @@
+/** colores */
+/** Alturas **/
+/** fuentes */
+/** placeholders */
+.contacto .texto .title {
+  font-family: "Chaparral Pro", serif;
+  color: #C2322A;
+  font-size: calc(1.2em + 1.3vw);
+  font-weight: bold;
+}
+
+.contacto .formulario-contacto .textwidget > h1 {
+  -webkit-text-fill-color: #E7B830;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: black;
+}
+
+.contacto {
+  align-items: center;
+  background-color: gainsboro;
+}
+.contacto .texto {
+  margin-top: 2%;
+  max-width: 100%;
+  text-align: center;
+}
+.contacto .texto .title {
+  margin-top: 30px;
+}
+.contacto .texto .process-list {
+  margin-top: 10px;
+}
+.contacto .texto .process-list .process-description {
+  text-align: center;
+  color: #4a4a4a;
+  margin: 0;
+  font-weight: 600;
+}
+.contacto .formulario-contacto {
+  padding: 3% 0 !important;
+}
+.contacto .formulario-contacto .textwidget > p {
+  font-weight: 400 !important;
+}
+.contacto .formulario-contacto .labels-formato {
+  margin-bottom: 0 !important;
+}
+.contacto .formulario-contacto .form-control-md {
+  width: 60% !important;
+}
+
+/*# sourceMappingURL=sec_contacto.css.map */

@@ -1,0 +1,59 @@
+
+
+@import "variables";
+
+.contacto{
+    align-items: center;
+    background-color: gainsboro;
+
+
+
+    .texto{
+        margin-top: 2%;
+        max-width: 100%;
+        
+    text-align: center;
+
+            .title {
+                @extend %base-title;
+                margin-top: 30px;
+            }
+  
+            .process-list {
+                margin-top: 10px;
+  
+               
+                .process-description{
+                    text-align: center;
+                    color: $gray;
+                    margin: 0;
+                    font-weight: 600;
+                    }
+            }
+        }
+   
+    
+    .formulario-contacto{
+        padding: 3% 0 !important;
+        .textwidget{
+            & > h1{
+              @extend %color-combinado;
+              
+            }
+        
+            & > p {
+              font-weight: 400 !important;
+            }
+
+            
+          }
+        
+         
+        .labels-formato{
+            margin-bottom: 0 !important;
+        }
+        .form-control-md{
+            width: 60% !important;
+        }
+    }
+}

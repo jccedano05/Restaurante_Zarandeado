@@ -50,6 +50,7 @@
 
 body {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .redes_sociales {

@@ -1,0 +1,51 @@
+
+
+@import "variables";
+
+
+.nosotros{
+    background-color: black;
+  justify-items: center;
+  align-items: center;
+}
+
+.texto-nosotros{
+
+    margin: 5% 5% 5% 10%;
+    font-family: "Chaparral Pro";
+    color: white;
+    
+}
+.texto-nosotros h1 {
+  font-weight: bold;
+  font-size: 3.5vw;
+  margin-bottom: 2.5vw;
+  
+}
+.texto-nosotros p {
+   
+    text-align: justify;
+    font-size: calc(1em + 0.4vw);
+    
+  }
+
+
+.img-fluid{
+    max-width: 60% !important;
+   padding: 5% 0;
+}
+
+
+@media (max-width: 780px) {
+ 
+  .texto-nosotros h1 {
+    font-size: 7.5vw;
+  }
+
+  .texto-nosotros{
+    margin:10%;
+}
+
+}
+
+
