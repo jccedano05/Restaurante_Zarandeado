@@ -3,31 +3,32 @@
 
 
 .acceso-contacto{
+  // .fondo-mariscos{
+  //     padding: 0;
+  //     height: 100%;
 
-    
-  
-  
-      .fondo-mariscos{
-          padding: 0;
-          height: 100%;
-  
-          & > .card-img-top{
-              @extend %fondoBG-mariscos;
-              border: 1px white solid;  
-              max-width: 1600px !important;
-              width: 100% !important;
-              max-height: 600px !important;
-              height: 40% !important;
-              margin-top: 0.1vw;
-              opacity: 0.065 !important;
-             
-              @media (max-width: 765px) {
-                height: 70% !important;
-              }
-            }
-  
-          
-      }
+  //     & > .card-img-top{
+  //         @extend %fondoBG-mariscos;
+  //         border: 1px white solid;
+  //         max-width: 1600px !important;
+  //         width: 100% !important;
+  //         max-height: 600px !important;
+  //         height: 40% !important;
+  //         margin-top: 0.1vw;
+  //         opacity: 0.065 !important;
+
+  //         @media (max-width: 765px) {
+  //           height: 70% !important;
+  //         }
+  //       }
+
+
+  // }
+  background-color: gainsboro;
+  background-image: url('../images/FONDO\ COLOR-01.png');
+  background-size: 700px 600px;
+  background-blend-mode: overlay;
+  background-position: center;
   
       
       .col-sm-8{
