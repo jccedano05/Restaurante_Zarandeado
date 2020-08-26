@@ -9,15 +9,6 @@
   font-weight: bold;
 }
 
-.acceso-contacto .fondo-mariscos > .card-img-top {
-  opacity: 0.085;
-  position: absolute;
-  margin-top: -50px;
-  left: 0;
-  z-index: 0;
-  height: 100%;
-}
-
 .acceso-contacto .textwidget > h1 {
   -webkit-text-fill-color: #E7B830;
   -webkit-text-stroke-width: 0.8px;
@@ -25,26 +16,32 @@
 }
 
 .acceso-contacto {
+  /* .fondo-mariscos{
+      padding: 0;
+     height: 100%;
+
+      & > .card-img-top{
+          @extend %fondoBG-mariscos;
+          border: 1px white solid;
+          max-width: 1600px !important;
+          width: 100% !important;
+          max-height: 600px !important;
+          height: 40% !important;
+          margin-top: 0.1vw;
+          opacity: 0.065 !important;
+
+          @media (max-width: 765px) {
+           height: 70% !important;
+          }
+        }
+
+
+  } */
   background-color: gainsboro;
-  z-index: 0;
-}
-.acceso-contacto .fondo-mariscos {
-  padding: 0;
-  height: 100%;
-}
-.acceso-contacto .fondo-mariscos > .card-img-top {
-  border: 1px white solid;
-  max-width: 1600px !important;
-  width: 100% !important;
-  max-height: 600px !important;
-  height: 40% !important;
-  margin-top: 0.1vw;
-  opacity: 0.065 !important;
-}
-@media (max-width: 765px) {
-  .acceso-contacto .fondo-mariscos > .card-img-top {
-    height: 70% !important;
-  }
+  background-image: url("../images/FONDO COLOR-01.png");
+  background-size: 700px 600px;
+  background-blend-mode: overlay;
+  background-position: center;
 }
 .acceso-contacto .col-sm-8 {
   text-align: center;
