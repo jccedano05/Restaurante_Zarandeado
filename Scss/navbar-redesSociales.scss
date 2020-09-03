@@ -16,17 +16,24 @@ body {
   @extend %fondo-redes-sociales;
 
 
-  .icono_face {
-    height: 105%;
+  .linkFace{
     margin-right: 7vw;
+  }
+    .icono_face {
+      height: 105%;
+    }
+  
+  
+  .linksInstaTwitter{
+    margin-right: 2vw;
   }
 
     .icono_twitter {
-      @extend %propiedadesIconos-twitter-insta;
+      height: 70%;
     }
 
     .icono_insta {
-     @extend %propiedadesIconos-twitter-insta;
+      height: 70%;
     }
 
 }
@@ -37,9 +44,12 @@ body {
     height: 40px;
     text-align: center;
 
-      .icono_face {
+    .linkFace{
         margin: 0;
       }
+    .linksInstaTwitter{
+        margin-right: 5vw;
+    }
   }
 }
 
