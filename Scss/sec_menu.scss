@@ -143,3 +143,37 @@
   color: #073e61;
   opacity: 1;
 }
+
+
+.menuCategory {
+  padding: 20px 0 40px 3vw;
+  margin-bottom: 10px;
+  clear: both;
+  text-align: left;
+}
+
+.dmRestaurantMenuCol {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0px 35px 0 0;
+  line-height: 150%;
+
+}
+
+ .menuItemBox {
+  border-bottom-width: 1px !important;
+  border-bottom-style: dotted !important;
+  border-bottom-color: rgba(187,187,187,1) !important;
+  margin-bottom: 2.5vw !important;
+}
+
+.menuItemName {
+  color: rgba(0,0,0,1) !important;
+  font-weight: bold !important;
+}
+
+.menuItemDesc {
+  color: rgba(121,118,118,1) !important;
+  font-weight: normal !important;
+}
