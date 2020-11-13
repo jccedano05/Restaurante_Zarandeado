@@ -1,0 +1,39 @@
+{
+  "name": "Restaurante-Zarandeado-Web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jccedano05/Restaurante_Zarandeado.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jccedano05/Restaurante_Zarandeado/issues"
+  },
+  "homepage": "https://github.com/jccedano05/Restaurante_Zarandeado#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.13",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "handlebars": "^4.5.0",
+    "nodemon": "^2.0.6",
+    "npm-check-updates": "^10.0.0"
+  }
+}
