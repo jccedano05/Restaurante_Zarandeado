@@ -25,15 +25,15 @@ router.get('/addresses', isAuthenticated, renderAddresses);
 
 
 // -------- Modificar Domicilios  ---------
-router.get('/addresses/edit/:id', isAuthenticated, renderEditForm);    //para poner un id o dato que variara, se coloca : y el nombre que recibira esa variable (en este caso id)
+router.get('/addresses/edit/:id', isAuthenticated, renderEditForm);   
 
-router.put('/addresses/edit/:id', isAuthenticated, updateAddress);   // el put actualiza algo que ya existe (post es para un nuevo dato)
+router.put('/addresses/edit/:id', isAuthenticated, updateAddress);  
 
 
 
 
 // -------- Eliminar Domicilios ---------
-router.delete('/addresses/delete/:id', isAuthenticated, deleteAddress);    //con este metodo borramos lo que haya en esa ruta
+router.delete('/addresses/delete/:id', isAuthenticated, deleteAddress);  
 
 
 module.exports = router; 

@@ -19,14 +19,11 @@ userCtrl.signup = async (req, res) => {
 
     if(password != confirm_password){
         errors.push({text: ' Passwords do not match'});
-        console.log('------------------ ERROR 1---------------');
     }
     if(password.length < 8){
         errors.push({text: 'Passwords must be at least 8 characters.'});
-        console.log('------------------ ERROR 2---------------');
     }
     if(errors.length > 0){
-        console.log('------------------ ERROR 3---------------');
         res.render('users/signup', {
            errors,
            name,
@@ -36,7 +33,6 @@ userCtrl.signup = async (req, res) => {
     } else {
         const emailUser = await User.findOne({email: email});
         if(emailUser){ 
-            console.log('------------------ ERROR 4---------------');
             req.flash('error_msg', 'The email is already in use.');
             res.redirect('/users/signup');
         } else {

@@ -40,8 +40,8 @@ const AddressesSchema = new Schema({
         required: true
     }
 }, { 
-        timestamps: true //declaramos que nos cree automaticamente CreateAt UpdateAt que son cuando se creo y modifico 
+        timestamps: true  
     
 });
 
-module.exports = model('Address', AddressesSchema);  //este es el modelo que usaremos en todas partes 
+module.exports = model('Address', AddressesSchema); 
